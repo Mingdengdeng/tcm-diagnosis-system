@@ -1,0 +1,15 @@
+[Unit]
+Description=TCM Diagnosis System Flask App
+After=network.target
+
+[Service]
+User=pi
+Group=pi
+WorkingDirectory=/home/pi/tcm-diagnosis-system
+EnvironmentFile=/home/pi/tcm-diagnosis-system/.env
+ExecStart=/home/pi/tcm-diagnosis-system/.venv/bin/gunicorn --workers 1 --threads 2 --timeout 120 --bind 0.0.0.0:5000 app:app
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

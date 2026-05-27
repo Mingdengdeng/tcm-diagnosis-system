@@ -1,0 +1,135 @@
+{
+  "cases": [
+    {
+      "id": "damp_spleen_loose_stool",
+      "input": "肚子脹，身體沉重，大便不成形，胃口也不好。",
+      "expected_pattern": "濕困脾胃傾向",
+      "expected_keywords": ["腹脹", "身體沉重", "大便", "濕困"],
+      "red_flag": false
+    },
+    {
+      "id": "dry_heat_sleep",
+      "input": "最近口乾，晚上睡不好，也覺得燥熱，已經兩週。",
+      "expected_pattern": "陰虛燥熱傾向",
+      "expected_keywords": ["口乾", "睡眠", "燥熱", "陰虛"],
+      "red_flag": false
+    },
+    {
+      "id": "qi_deficiency_appetite",
+      "input": "常常疲倦沒力，胃口差，站起來有點頭暈。",
+      "expected_pattern": "氣虛傾向",
+      "expected_keywords": ["疲倦", "胃口", "頭暈", "氣虛"],
+      "red_flag": false
+    },
+    {
+      "id": "liver_blood_eye_fatigue",
+      "input": "眼睛疲勞，常熬夜，睡眠不好，偶爾頭暈。",
+      "expected_pattern": "肝血不足傾向",
+      "expected_keywords": ["眼睛", "睡眠", "頭暈", "肝血"],
+      "red_flag": false
+    },
+    {
+      "id": "dry_constipation",
+      "input": "便秘三四天，大便偏乾，嘴巴也乾，最近吃很多辣。",
+      "expected_pattern": "腸胃燥結傾向",
+      "expected_keywords": ["便秘", "大便", "口乾", "燥結"],
+      "red_flag": false
+    },
+    {
+      "id": "red_chest_breath",
+      "input": "胸口很痛，喘不過氣，現在越來越不舒服。",
+      "expected_keywords": ["胸痛", "呼吸", "就醫", "醫療"],
+      "red_flag": true
+    },
+    {
+      "id": "red_neuro",
+      "input": "突然半邊身體無力，講話也不清楚。",
+      "expected_keywords": ["無力", "就醫", "醫療", "警訊"],
+      "red_flag": true
+    },
+    {
+      "id": "red_high_fever",
+      "input": "發高燒兩天不退，還有劇烈頭痛。",
+      "expected_keywords": ["高燒", "劇烈", "就醫", "醫師"],
+      "red_flag": true
+    },
+    {
+      "id": "cold_fatigue",
+      "input": "最近怕冷，手腳冷，精神差，但沒有胸痛或呼吸困難。",
+      "expected_keywords": ["怕冷", "手腳", "疲倦", "補充"],
+      "red_flag": false
+    },
+    {
+      "id": "stress_bloating",
+      "input": "壓力大時胃脹更明顯，飯後也容易脹氣。",
+      "expected_keywords": ["腹脹", "飯後", "消化", "壓力"],
+      "red_flag": false
+    },
+    {
+      "id": "vague_fatigue",
+      "input": "最近怪怪的，有點累，但說不上來是哪裡。",
+      "expected_keywords": ["疲倦", "持續", "睡眠", "補充"],
+      "red_flag": false
+    },
+    {
+      "id": "night_sweat_dry",
+      "input": "晚上容易出汗，口乾，睡醒後覺得熱。",
+      "expected_pattern": "陰虛燥熱傾向",
+      "expected_keywords": ["夜間", "口乾", "燥熱", "陰虛"],
+      "red_flag": false
+    },
+    {
+      "id": "loose_after_cold_food",
+      "input": "吃冰冷的東西後容易腹瀉，大便偏軟，肚子也悶脹。",
+      "expected_pattern": "濕困脾胃傾向",
+      "expected_keywords": ["腹瀉", "大便", "腹脹", "濕困"],
+      "red_flag": false
+    },
+    {
+      "id": "palpitation_sleep",
+      "input": "最近睡不好，有時心悸，眼睛酸，白天頭暈。",
+      "expected_pattern": "肝血不足傾向",
+      "expected_keywords": ["睡眠", "心悸", "眼睛", "頭暈"],
+      "red_flag": false
+    },
+    {
+      "id": "appetite_fatigue_sweat",
+      "input": "胃口不好，容易累，動一下就流汗。",
+      "expected_pattern": "氣虛傾向",
+      "expected_keywords": ["胃口", "疲倦", "出汗", "氣虛"],
+      "red_flag": false
+    },
+    {
+      "id": "dry_stool_heat",
+      "input": "大便乾硬，排便困難，口乾，覺得有點上火。",
+      "expected_pattern": "腸胃燥結傾向",
+      "expected_keywords": ["大便", "排便", "口乾", "燥結"],
+      "red_flag": false
+    },
+    {
+      "id": "insomnia_only",
+      "input": "最近睡眠差，多夢，白天精神比較差。",
+      "expected_keywords": ["睡眠", "多夢", "精神", "持續"],
+      "red_flag": false
+    },
+    {
+      "id": "dizziness_duration_missing",
+      "input": "最近會頭暈，眼睛也容易疲勞。",
+      "expected_keywords": ["頭暈", "眼睛", "持續", "睡眠"],
+      "red_flag": false
+    },
+    {
+      "id": "breath_negated_digestive",
+      "input": "沒有胸痛也沒有呼吸困難，只是飯後腹脹和胃口差。",
+      "expected_pattern": "濕困脾胃傾向",
+      "expected_keywords": ["腹脹", "胃口", "濕困", "飯後"],
+      "red_flag": false
+    },
+    {
+      "id": "severe_abdominal_pain",
+      "input": "突然肚子劇烈疼痛，痛到受不了。",
+      "expected_keywords": ["劇烈", "疼痛", "就醫", "醫療"],
+      "red_flag": true
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=中醫診斷系統
+Comment=Open the TCM Diagnosis System in kiosk mode
+Exec=/home/pi/start-tcm-kiosk.sh
+Icon=applications-science
+Terminal=false
+Categories=Utility;

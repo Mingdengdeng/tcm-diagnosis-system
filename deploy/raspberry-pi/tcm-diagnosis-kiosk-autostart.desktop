@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=TCM Diagnosis Kiosk
+Comment=Start the TCM Diagnosis System kiosk on login
+Exec=/home/pi/start-tcm-kiosk.sh
+Terminal=false
+X-GNOME-Autostart-enabled=true

@@ -1,0 +1,96 @@
+# Traditional Chinese Zhuyin layout for Squeekboard.
+# Labels follow the common Taiwan Bopomofo keyboard while keysyms keep the
+# physical US-key mapping expected by Chewing/Fcitx.
+---
+outlines:
+    default:       { width: 43, height: 54 }
+    change-view:   { width: 58, height: 54 }
+    spaceline:     { width: 190, height: 54 }
+    special:       { width: 58, height: 54 }
+    special-wide:  { width: 76, height: 54 }
+
+views:
+    base:
+        - "b_1 d_2 tone_3 tone_4 zh_5 tone_2 tone_5 a_8 ai_9 an_0"
+        - "p_q t_w g_e j_r ch_t z_y i_u o_i ei_o en_p"
+        - "m_a n_s k_d q_f sh_g c_h u_j e_k ao_l ang_semicolon"
+        - "f_z l_x h_c x_v r_b s_n yu_m eh_comma ou_period eng_slash"
+        - "show_numbers preferences er_minus space BackSpace Return"
+    numbers:
+        - "1 2 3 4 5 6 7 8 9 0"
+        - "@ # $ % & - _ + ( )"
+        - "show_letters , . : ; ! ? BackSpace"
+        - "show_letters preferences space Return"
+
+buttons:
+    b_1:              { label: "ㄅ", keysym: "1" }
+    d_2:              { label: "ㄉ", keysym: "2" }
+    tone_3:           { label: "ˇ", keysym: "3" }
+    tone_4:           { label: "ˋ", keysym: "4" }
+    zh_5:             { label: "ㄓ", keysym: "5" }
+    tone_2:           { label: "ˊ", keysym: "6" }
+    tone_5:           { label: "˙", keysym: "7" }
+    a_8:              { label: "ㄚ", keysym: "8" }
+    ai_9:             { label: "ㄞ", keysym: "9" }
+    an_0:             { label: "ㄢ", keysym: "0" }
+
+    p_q:              { label: "ㄆ", keysym: "q" }
+    t_w:              { label: "ㄊ", keysym: "w" }
+    g_e:              { label: "ㄍ", keysym: "e" }
+    j_r:              { label: "ㄐ", keysym: "r" }
+    ch_t:             { label: "ㄔ", keysym: "t" }
+    z_y:              { label: "ㄗ", keysym: "y" }
+    i_u:              { label: "ㄧ", keysym: "u" }
+    o_i:              { label: "ㄛ", keysym: "i" }
+    ei_o:             { label: "ㄟ", keysym: "o" }
+    en_p:             { label: "ㄣ", keysym: "p" }
+
+    m_a:              { label: "ㄇ", keysym: "a" }
+    n_s:              { label: "ㄋ", keysym: "s" }
+    k_d:              { label: "ㄎ", keysym: "d" }
+    q_f:              { label: "ㄑ", keysym: "f" }
+    sh_g:             { label: "ㄕ", keysym: "g" }
+    c_h:              { label: "ㄘ", keysym: "h" }
+    u_j:              { label: "ㄨ", keysym: "j" }
+    e_k:              { label: "ㄜ", keysym: "k" }
+    ao_l:             { label: "ㄠ", keysym: "l" }
+    ang_semicolon:    { label: "ㄤ", keysym: "semicolon" }
+
+    f_z:              { label: "ㄈ", keysym: "z" }
+    l_x:              { label: "ㄌ", keysym: "x" }
+    h_c:              { label: "ㄏ", keysym: "c" }
+    x_v:              { label: "ㄒ", keysym: "v" }
+    r_b:              { label: "ㄖ", keysym: "b" }
+    s_n:              { label: "ㄙ", keysym: "n" }
+    yu_m:             { label: "ㄩ", keysym: "m" }
+    eh_comma:         { label: "ㄝ", keysym: "comma" }
+    ou_period:        { label: "ㄡ", keysym: "period" }
+    eng_slash:        { label: "ㄥ", keysym: "slash" }
+    er_minus:         { label: "ㄦ", keysym: "minus" }
+
+    show_numbers:
+        action:
+            set_view: "numbers"
+        outline: "change-view"
+        label: "123"
+    show_letters:
+        action:
+            set_view: "base"
+        outline: "change-view"
+        label: "注音"
+    preferences:
+        action: "show_prefs"
+        outline: "special"
+        icon: "keyboard-mode-symbolic"
+    space:
+        outline: "spaceline"
+        label: "空白"
+        keysym: "space"
+    BackSpace:
+        outline: "special-wide"
+        icon: "edit-clear-symbolic"
+        action: "erase"
+    Return:
+        outline: "special-wide"
+        icon: "key-enter"
+        keysym: "Return"
